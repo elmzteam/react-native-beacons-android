@@ -146,12 +146,12 @@ public class BeaconsAndroidModule extends ReactContextBaseJavaModule implements 
 				.setId1(uuid)
 				.setId2(Integer.toString(major))
 				.setId3(Integer.toString(minor))
-				.setManufacturer(0x0118)
+				.setManufacturer(0x004C)
 				.setTxPower(-59)
 				.setDataFields(Arrays.asList(new Long[] {0l}))
 				.build();
 		BeaconParser beaconParser = new BeaconParser()
-				.setBeaconLayout("m:2-3=beac,i:4-19,i:20-21,i:22-23,p:24-24,d:25-25");
+				.setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24");
 		mBeaconTransmitter = new BeaconTransmitter(getApplicationContext(), beaconParser);
 		mBeaconTransmitter.startAdvertising(beacon);
 
