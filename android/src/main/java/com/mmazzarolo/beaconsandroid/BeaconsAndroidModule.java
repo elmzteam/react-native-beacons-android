@@ -151,7 +151,7 @@ public class BeaconsAndroidModule extends ReactContextBaseJavaModule implements 
 				.setDataFields(Arrays.asList(new Long[] {0l}))
 				.build();
 		BeaconParser beaconParser = new BeaconParser()
-				.setBeaconLayout("m:2-3=beac,i:4-19,i:20-21,i:22-23,p:24-24,d:25-25");
+				.setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24");
 		mBeaconTransmitter = new BeaconTransmitter(getApplicationContext(), beaconParser);
 		mBeaconTransmitter.startAdvertising(beacon);
 
