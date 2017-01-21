@@ -31,6 +31,7 @@ import org.altbeacon.beacon.Region;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Arrays;
 
 public class BeaconsAndroidModule extends ReactContextBaseJavaModule implements BeaconConsumer {
 	private static final String LOG_TAG = "BeaconsAndroidModule";
