@@ -1,4 +1,4 @@
-const ReactNative = require('react-native')
+iumconst ReactNative = require('react-native')
 
 const beaconsAndroid = ReactNative.NativeModules.BeaconsAndroidModule
 
@@ -71,11 +71,11 @@ const stopRangingBeaconsInRegion = (regionId, beaconsUUID) => new Promise((resol
 })
 
 const startAdvertising = (region) => new Promise((resolve, reject) => {
-	beaconsAndroid.startTransmitting(region.identifier, region.uuid, region.major, region.minor, resolve, reject)
+	beaconsAndroid.startAdvertising(region.identifier, region.uuid, region.major, region.minor, resolve, reject)
 })
 
 const stopAdvertising = () => new Promise((resolve, reject) => {
-	beaconsAndroid.stopTransmitting(resolve, reject)
+	beaconsAndroid.stopAdvertising(resolve, reject)
 })
 
 module.exports = {
