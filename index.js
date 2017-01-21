@@ -1,4 +1,4 @@
-iumconst ReactNative = require('react-native')
+const ReactNative = require('react-native')
 
 const beaconsAndroid = ReactNative.NativeModules.BeaconsAndroidModule
 
